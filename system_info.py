@@ -1,6 +1,7 @@
 # encoding: utf-8
 # python3
 import time
+import os
 from datetime import datetime
 
 
@@ -51,5 +52,6 @@ def _cpu_info(file):
 
 
 print ('系统时间: ' + datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
+print(os.system('uptime'))
 mem_info('/proc/meminfo')
 _cpu_info('/proc/cpuinfo')
